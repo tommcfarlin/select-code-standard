@@ -1,0 +1,83 @@
+{
+    "name": "code-standard-selector",
+    "displayName": "Code Standard Selector",
+    "description": "Easily swap coding standards for PHP projects.",
+    "version": "1.0.0",
+    "publisher": "tom@tommcfarlin.com",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "main": "./src/extension.js",
+    "activationEvents": [
+        "onLanguage:php",
+        "workspaceContains:**/*.php"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.selectCodeStandard",
+                "title": "Select Code Standard"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.selectCodeStandard",
+                "key": "ctrl+alt+s",
+                "win": "ctrl+alt+s",
+                "linux": "ctrl+alt+s",
+                "mac": "cmd+alt+s",
+                "when": "editorLangId == php"
+            }
+        ],
+        "configuration": {
+            "title": "PHP Code Standard Selector",
+            "properties": {
+                "phpCodeStandardSelector.standard": {
+                    "type": "string",
+                    "default": "PSR12",
+                    "description": "Selected PHP coding standard"
+                },
+                "phpCodeStandardSelector.executablePathCS": {
+                    "type": "string",
+                    "default": "/usr/local/bin/phpcs",
+                    "description": "Path to PHPCS executable"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "node ./node_modules/vscode/bin/compile",
+        "watch": "node ./node_modules/vscode/bin/compile -watch -p ./",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@vscode/test-electron": "^2.4.1",
+        "glob": "^7.2.0",
+        "mocha": "^10.2.0",
+        "vscode": "^1.1.37"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tommcfarlin/code-standard-selector"
+    },
+    "bugs": {
+        "url": "https://github.com/tommcfarlin/code-standard-selector/issues"
+    },
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
+    "categories": [
+        "Formatters",
+        "Linters",
+        "Programming Languages"
+    ],
+    "keywords": [
+        "php",
+        "phpcs",
+        "coding standards",
+        "psr-12",
+        "wordpress"
+    ]
+}
