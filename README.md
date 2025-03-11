@@ -10,8 +10,6 @@ Easily switch between PHP coding standards in VS Code. Integrates with PHP_CodeS
 - ⚡️ Keyboard shortcut support
 - 🔌 Integration with PHP Sniffer & Beautifier
 
-![Feature Preview](images/feature-preview.gif)
-
 ## Requirements
 
 - PHP 8.2 or higher

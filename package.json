@@ -2,8 +2,9 @@
     "name": "code-standard-selector",
     "displayName": "Code Standard Selector",
     "description": "Easily swap coding standards for PHP projects.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "tommcfarlin",
+    "icon": "images/icon.png",
     "engines": {
         "vscode": "^1.75.0"
     },
@@ -61,7 +62,7 @@
         "url": "https://github.com/tommcfarlin/code-standard-selector/issues"
     },
     "galleryBanner": {
-        "color": "#C80000",
+        "color": "#262a36",
         "theme": "dark"
     },
     "categories": [
