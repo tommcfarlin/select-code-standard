@@ -5,6 +5,20 @@ All notable changes to the "PHP Code Standard Selector" extension will be docume
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-03-11
+
+### Added
+
+- Extension Icon
+
+### Updated
+
+- Marketplace look and feel
+
+### Removed
+
+- Feature Preview image
+
 ## [1.0.0] - 2025-03-11
 
 ### Added
