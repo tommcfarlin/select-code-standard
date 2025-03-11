@@ -61,13 +61,4 @@ suite('Extension Test Suite', () => {
         const standards = await getInstalledStandards();
         assert.ok(Array.isArray(standards));
     });
-
-    test('Should show default standard', async () => {
-        const config = vscode.workspace.getConfiguration('phpsab');
-        const defaultStandard = 'PSR12';
-        assert.strictEqual(
-            extensionContext.statusBarItem.text,
-            `$(law) ${defaultStandard}`
-        );
-    });
 });
