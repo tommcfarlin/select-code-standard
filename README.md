@@ -22,7 +22,7 @@ Easily switch between PHP coding standards in VS Code. Integrates with PHP_CodeS
 
 1. Open VS Code
 2. Press `Cmd+P` to open the Quick Open dialog
-3. Type `ext install tom@tommcfarlin.com.code-standard-selector`
+3. Type `ext install tommcfarlin.code-standard-selector`
 4. Press Enter
 
 ## Usage

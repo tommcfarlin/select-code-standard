@@ -6,7 +6,7 @@ suite('Extension Test Suite', () => {
 
     suiteSetup(async () => {
         // Get the extension
-        const extension = vscode.extensions.getExtension('tom@tommcfarlin.com.code-standard-selector');
+        const extension = vscode.extensions.getExtension('tommcfarlin.code-standard-selector');
 
         // Activate the extension and store the exports
         extensionContext = await extension.activate();
@@ -23,12 +23,12 @@ suite('Extension Test Suite', () => {
     });
 
     test('Extension should be present', () => {
-        const extension = vscode.extensions.getExtension('tom@tommcfarlin.com.code-standard-selector');
+        const extension = vscode.extensions.getExtension('tommcfarlin.code-standard-selector');
         assert.ok(extension);
     });
 
     test('Should check dependencies', async () => {
-        const extension = vscode.extensions.getExtension('tom@tommcfarlin.com.code-standard-selector');
+        const extension = vscode.extensions.getExtension('tommcfarlin.code-standard-selector');
         assert.ok(extension.isActive);
     });
 
@@ -56,7 +56,7 @@ suite('Extension Test Suite', () => {
     });
 
     test('Should detect installed standards', async () => {
-        const extension = vscode.extensions.getExtension('tom@tommcfarlin.com.code-standard-selector');
+        const extension = vscode.extensions.getExtension('tommcfarlin.code-standard-selector');
         const { getInstalledStandards } = extension.exports;
         const standards = await getInstalledStandards();
         assert.ok(Array.isArray(standards));
