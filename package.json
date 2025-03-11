@@ -46,16 +46,12 @@
         }
     },
     "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "node ./node_modules/vscode/bin/compile",
-        "watch": "node ./node_modules/vscode/bin/compile -watch -p ./",
         "test": "node ./test/runTest.js"
     },
     "devDependencies": {
         "@vscode/test-electron": "^2.4.1",
         "glob": "^7.2.0",
-        "mocha": "^10.2.0",
-        "vscode": "^1.1.37"
+        "mocha": "^10.2.0"
     },
     "repository": {
         "type": "git",
